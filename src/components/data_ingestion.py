@@ -1,5 +1,8 @@
 import os
+
 import sys
+sys.path.append('E:/MLproject/endtoend/src')
+
 from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
