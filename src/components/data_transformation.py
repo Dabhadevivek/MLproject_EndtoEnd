@@ -7,13 +7,18 @@ from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
-
-from src.exception import CustomException
-from src.logger import logging
+sys.path.append('E:/MLproject/endtoend/src')
 import os
+# from src.exception import CustomException
+# from src.logger import logging
 
-from src.utils import save_object
 
+
+# from src.utils import save_object
+# Import relative to the package
+from exception import CustomException
+from logger import logging
+from utils import save_object
 @dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
