@@ -1,5 +1,6 @@
 import os
 import sys
+sys.path.append('E:/MLproject/endtoend/src')
 from dataclasses import dataclass
 
 from catboost import CatBoostRegressor
